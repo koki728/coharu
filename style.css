@@ -1,0 +1,724 @@
+* {
+    list-style: none;
+    text-decoration: none;
+    color: #707070;
+    margin: 0;
+}
+
+h2 {
+    color: #76A832;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    background-color: #f7f7f7;
+    font-family: "ヒラギノ角ゴ ProN W3","HiraKakuProN-W3","ヒラギノ角ゴ Pro W3","HiraKakuPro-W3","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS Pgothic","Osaka",sans-serif,Helvetica, Helvetica Neue, Arial, Verdana;;
+}
+
+/* <--- メインコンテナCSS　---> */
+header,
+footer {
+    display: flex;
+    max-width: 1030px;
+    margin: 0 auto;
+    padding: 55px 20px 40px;
+    z-index: 9;
+    position: relative;
+}
+
+.nav {
+    align-self: center;
+    max-width: 1030px;
+}
+
+.nav ul {
+    display: flex;
+}
+
+.nav ul li {
+    margin-left: 30px;
+}
+
+.fvBg {
+    background-image: url('img/main_hand.png');
+    /* position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    */
+    background-position: center center;
+    max-height: 900px;
+    height: 100vh;
+    margin-top: -150px;
+}
+
+.fvText {
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 100%;
+    position: relative;
+    padding: 0%;
+}
+
+.fvBg h2 {
+    position: absolute;
+    bottom: 40%;
+    letter-spacing: 10px;
+}
+
+.main_container {
+    max-width: 920px;
+    margin: 0 auto;
+}
+
+.news_top {
+    background-color: #f7f7f7;
+}
+
+.top_news {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-color: #fff;
+    padding: 59px 75px;
+    position: relative;
+}
+
+.news_warp {
+    display: flex;
+    font-size: 12px;
+    margin-bottom: 50px;
+}
+
+.days {
+    width: 100px;
+    margin-right: 20px;
+}
+
+.top-news__btn-block {
+    height: 100%;
+    text-align: end;
+}
+
+.btn--line {
+    /* background: linear-gradient(135deg, #d3e5ac 0%, #d6e6ac 33.1618010998%, #dde9ab 44.6738004684%, #fbf6a6 100%); */
+    background: rgb(255,175,251);
+background: linear-gradient(45deg, rgba(255,175,251,1) 0%, rgba(255,252,155,1) 100%);
+    height: 80%;
+    padding: 16px;
+    width: 42px;
+    text-align: center;
+}
+
+.section_title {
+    position: absolute;
+    top: -15px;
+    left: 32px;
+    font-size: 24px;
+}
+
+.top_message_btn {
+    /* background: linear-gradient(135deg, #d3e5ac 0%, #d6e6ac 33.1618010998%, #dde9ab 44.6738004684%, #fbf6a6 100%); */
+    background: rgb(255,175,251);
+background: linear-gradient(45deg, rgba(255,175,251,1) 0%, rgba(255,252,155,1) 100%);
+    
+    padding: 16px;
+    display: inline-block;
+    text-align: center;
+    width: 238px;
+    text-align: start;
+}
+
+.message {
+    position: relative;
+    z-index: 10;
+}
+
+.img_wrap {
+    position: relative;
+    right: 18%;
+}
+.bottom_img{
+    right: 30%;
+    right: calc((14 - -200) * ((100vw - 2000px) / (2000 - 375)) + 14%);
+}
+
+.messageGroup_left {
+    display: flex;
+    margin-bottom: 150px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    -webkit-box-orient: horizontal;
+    /* -webkit-box-direction: reverse; */
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+}
+
+.messageGroup_right {
+    display: flex;
+    margin-bottom: 150px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+}
+
+.message h2 {
+    font-size: calc((48 - 20) * ((100vw - 2000px) / (2000 - 375)) + 48px);
+    line-height: 1.8;
+    background-color: #fff;
+    display: inline;
+    padding: 20px 0;
+    z-index: 8;
+    letter-spacing: 14px;
+}
+
+.messageGroup_left img {
+    left: 50%;
+    z-index: 1;
+}
+
+
+.messageGroup_right img {
+
+    left: 50%;
+    z-index: 1;
+}
+.pcimg{
+    width: calc((650 - 300) * ((100vw - 2000px) / (2000 - 414)) + 650px);
+}
+
+.message p {
+    margin: 50px 0;
+    line-height: 2;
+}
+
+.messageGroup_right p {
+    text-align: end;
+}
+
+.space {
+    text-align: end;
+}
+
+.message.right {
+    right: 260px;
+    right: calc((260 - 0) * ((100vw - 2000px) / (2000 - 375)) + 260px);
+}
+
+.footer_wrap {
+    max-width: 100%;
+    background-color: #707070;
+}
+
+footer a {
+    color: #fff;
+}
+
+.footer_text {
+    color: #fff;
+    max-width: 1030px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+.footer_text{
+    font-size: calc((16 - 10) * ((100vw - 2000px) / (2000 - 375)) + 16px);
+}
+
+/*<-- serviceページCSS -->*/
+.main_title {
+    /* background: linear-gradient(135deg, #9beca8 0%, #d7f586 33.1618010998%, #dde9ab 44.6738004684%, #fbf6a6 100%);
+    ; */
+    background: rgb(255,175,251);
+background: linear-gradient(45deg, rgba(255,175,251,1) 0%, rgba(255,252,155,1) 100%);
+}
+
+.main_title p {
+    font-size: calc((40 - 22) * ((100vw - 2000px) / (2000 - 375)) + 40px);
+    letter-spacing: 15px;
+    text-align: center;
+    padding-top: calc((100 - 40) * ((100vw - 2000px) / (2000 - 375)) + 100px);
+    padding-bottom: calc((100 - 40) * ((100vw - 2000px) / (2000 - 375)) + 100px);
+}
+.main_title_top{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.service_text p {
+    font-size: calc((36 - 15) * ((100vw - 2000px) / (2000 - 375)) + 36px);
+    text-align: center;
+    margin-top: calc((200 - 50) * ((100vw - 2000px) / (2000 - 375)) + 200px);
+    margin-bottom: calc((50 - 20) * ((100vw - 2000px) / (2000 - 375)) + 50px);
+}
+
+.whats_koharu_wrap {
+    width: 80%;
+    margin: 0 auto;
+    padding: calc((50 - 20) * ((100vw - 2000px) / (2000 - 375)) + 50px);
+}
+
+.whats_koharu {
+    max-width: 1280px;
+    margin-top: calc((150 - 50) * ((100vw - 2000px) / (2000 - 375)) + 150px);
+    margin-bottom: calc((150 - 50) * ((100vw - 2000px) / (2000 - 375)) + 150px);
+
+    background-color: #fff;
+}
+
+.img_wrap_service {
+    width: 30%;
+    margin-bottom: 50px;
+}
+
+.whats_koharu_wrap p {
+    line-height: 2;
+}
+
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.inner_width {
+    width: 70%;
+    margin: 0 auto;
+}
+
+/* <-- company --> */
+
+/* .company_inner_text p{
+    font-size: 24px;
+    margin: 50px 0;
+    text-align: start;
+}
+.company_inner_text h2{
+    font-size: 42px;
+}
+.company_inner{
+    background-color: #fff;
+    display: flex;
+    position: relative;
+    padding: 100px 80px 50px 80px;
+}
+.company_inner img{
+    position: absolute;
+    right: 0;
+    top: -200px;
+}
+.company_messege{
+    position: relative;
+}
+.position_messege p{
+    position: absolute;
+    left: 5%;
+    top: -5%;
+    z-index: 1;
+    margin: 0;
+}
+.value_inner_title{
+    color: #76A832;
+    font-size: 42px !important;
+    margin: 0 !important;
+    margin-bottom: 50px;
+}
+.value_inner_text{
+    font-size: 24px !important;
+    margin: 0 !important;
+}
+.velue_inner_group{
+    max-width: 350px;
+    width: 100%;
+    margin-bottom: 100px;
+    margin-right: 30px;
+}
+.company_messege{
+    background-color: #fff;
+    position: relative;
+    padding: 100px 80px 50px 80px;
+    margin-bottom: 300px;
+}
+.value_inner{
+    display: flex;
+}
+.value_inner{
+    display: flex;
+}
+.value_inner{
+    position: relative;
+}
+.position_messege.value p{
+    position: absolute;
+    top: -30px;
+}
+.company_value img{
+    position: absolute;
+    right: 0;
+    top: -200px;
+} */
+.service_text,
+.mission,
+.value {
+    text-align: center;
+}
+
+.border-bottom {
+    border-bottom: 2px solid #707070;
+    margin-top: calc((100 - 30) * ((100vw - 2000px) / (2000 - 375)) + 100px);
+    margin-bottom: calc((100 - 30) * ((100vw - 2000px) / (2000 - 375)) + 100px);
+}
+
+.about {
+    margin-bottom: 30px !important;
+    font-size: calc((36 - 22) * ((100vw - 2000px) / (2000 - 375)) + 36px) !important;
+}
+
+table {
+    margin: 0 auto;
+    line-height: 2.5;
+}
+
+.about_inner {
+    margin-bottom: 150px;
+}
+
+.about_inner td,
+.about_inner th {
+    text-align: start;
+    font-size: calc((24 - 14) * ((100vw - 2000px) / (2000 - 375)) + 24px);
+    font-weight: 100;
+}
+
+.about_inner td {
+    width: calc((200 - 70) * ((100vw - 2000px) / (2000 - 375)) + 200px);
+}
+
+/* <-- contact --> */
+
+.contact_box{
+    background-color: #fff;
+    padding: 50px;
+}
+.contact_inner{
+    width: 50%;
+    margin: 0 auto;
+}
+input{
+	color: #222;
+    width: 100%;
+    height: 30px;
+	 font-size: 17px；
+}
+textarea{
+    width: 100%;
+	font-size: 17px;
+    color: #222;
+}
+.contact_group{
+    margin-bottom: 40px;
+}
+.submit{
+    /* background: linear-gradient(135deg, #d3e5ac 0%, #d6e6ac 33.1618010998%, #dde9ab 44.6738004684%, #fbf6a6 100%); */
+    background: rgb(255,175,251);
+background: linear-gradient(45deg, rgba(255,175,251,1) 0%, rgba(255,252,155,1) 100%);
+    width: 30%;
+    margin: 0 auto;
+    font-size: 22px;
+    text-align: center;
+    /* padding: 20px; */
+    margin-bottom: 50px;
+    border: 0;
+    height: 50px;
+}
+.submit_end{
+    text-align: center;
+}
+
+/* <-- 薬剤師ページここから --> */
+.yakuzaishi_title{
+    color: #707070;
+    font-size: 31px;
+    text-align: center;
+    font-weight: normal;
+    line-height: 2;
+    letter-spacing: calc((8 - 4) * ((100vw - 2000px) / (2000 - 375)) + 8px);
+    margin: 50px 0;
+    font-size: calc((31 - 15) * ((100vw - 2000px) / (2000 - 375)) + 31px);
+}
+
+.yaku_name{
+    font-size: 20px;
+}
+.yaku_name span{
+    font-size: 14px;
+}
+.yakuzaishi_flex{
+    display: flex;
+    justify-content: space-around;
+    margin-top: calc((100 - 50) * ((100vw - 2000px) / (2000 - 375)) + 100px);
+}
+.yakuzaishi_img{
+    width: 30%;
+}
+.yaku_text_group{
+    text-align: center;
+    width: 50%;
+}
+.yakuzaishi_text{
+    text-align: start;
+}
+.yaku_bunya{
+    margin: 20px 0 50px 0;
+}
+.yakuzaishi_link p{
+    background: linear-gradient(135deg, #9beca8 0%, #d7f586 33.1618010998%, #dde9ab 44.6738004684%, #fbf6a6 100%);
+    /* background: rgb(255,175,251);
+background: linear-gradient(45deg, rgba(255,175,251,1) 0%, rgba(255,252,155,1) 100%); */
+    display: inline-block;
+    padding: 10px 50px;
+    border-radius: 45px;
+    margin-top: 40px;
+    font-size: calc((30 - 20) * ((100vw - 2000px) / (2000 - 375)) + 30px);
+    margin-bottom: 50px;
+}
+.yakuzaishi_flow{
+    margin-top: 100px;
+}
+.yakuzaishi_link_big p{
+    background: linear-gradient(135deg, #9beca8 0%, #d7f586 33.1618010998%, #dde9ab 44.6738004684%, #fbf6a6 100%);
+    /* background: rgb(255,175,251);
+background: linear-gradient(45deg, rgba(255,175,251,1) 0%, rgba(255,252,155,1) 100%); */
+    display: inline-block;
+    padding: 25px 30px;
+    border-radius: 15px;
+    font-size: calc((20 - 14) * ((100vw - 2000px) / (2000 - 375)) + 20px);
+    max-width: 250px;
+    width: 100%;
+}
+.line-text-warp{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+.line-text{
+    font-size: calc((30 - 20) * ((100vw - 2000px) / (2000 - 375)) + 30px);
+}
+.yakuzaishi_big_btn{
+    text-align: center;
+    margin: 0px 100px;
+}
+
+@media screen and (max-width: 768px){
+    .contact_box{
+        padding: 0;
+    }
+    .contact_inner{
+        padding: 0;
+        width: 90%;
+    }
+    .wpcf7-form.init{
+        padding-top: 20px;
+    }
+	input{
+    width: 88%;
+    height: 30px;
+	font-size: 17px;
+		padding: 0 20px;
+}
+.messageGroup_right p{
+    text-align: start;
+}
+.space{
+    text-align: start;
+}
+.yakuzaishi_flex{
+    display: block;
+}
+.yaku_text_group,.yakuzaishi_img{
+    width: 100%;
+}
+.yakuzaishi_big_btn{
+    margin: 0 0 80px 0;
+}
+}
+
+
+
+
+
+
+.sp {
+    display: none;
+}
+.pc{
+    display: block;
+}
+.sp_none{
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .sp {
+        display: block;
+    }
+    .pc{
+        display: none;
+    }
+    .pc_none{
+        display: none;
+    }
+
+    header {
+        display: none;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .footer_text {
+        text-align: center;
+    }
+
+    footer img {
+        width: 40%;
+        margin-left: 30px;
+    }
+
+    .spheader_img {
+        position: relative;
+        padding: 20px;
+    }
+
+    .spheader_img img {
+        width: 50%;
+    }
+
+    .spheader_btn img {
+        position: absolute;
+        right: 18px;
+        top: 25px;
+        width: 10%;
+    }
+
+    .sp_header_inner {
+        background-color: #ffff;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: none;
+        z-index: 9;
+    }
+
+    .nav_ul {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 0;
+        line-height: 3.5;
+    }
+    .closeBtn{
+        padding: 20px;
+        font-size: 22px;
+        text-align: end;
+    }
+    .message.right{
+        right: 0;
+    }
+    .news_text{
+        width: 80%;
+    }
+    .top_news{
+        padding: 20px;
+        padding-top: 50px;
+    }
+    .fvBg {
+        background-image: url(img/main_hand.png);
+        background-position: center center;
+        max-height: 900px;
+        height: 100vh;
+        margin-top: 0;
+        background-size: cover;
+        z-index: 1;
+    }
+    .sp_none{
+        display: block;
+    }
+    .fvBg h2 {
+        position: absolute;
+        bottom: 20%;
+        left: 10%;
+        letter-spacing: 10px;
+        font-weight: 100;
+    }
+    .inner_width{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .main_title_top{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .message h2{
+        line-height: 2.5;
+    }
+
+}
+
+ /* NEWS */
+
+.news_content{
+    max-width: 320px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: start;
+}
+.date.news{
+    margin: 15px 0;
+}
+.news_conteiner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.news_text_page{
+    width: 100%;
+}
+.news_img{
+    max-height: 165px;
+    max-width: 100%;
+    width: 100%;
+}
+.attachment-post-thumbnail.size-post-thumbnail.wp-post-image{
+    height: auto;
+}
+.wp-block-image.size-large img{
+    height: auto;
+}
+.single_newscontent{
+    background-color: #fff;
+    padding: 100px;
+    padding: calc((100 - 30) * ((100vw - 2000px) / (2000 - 375)) + 100px);
+    margin-top: calc((150 - 50) * ((100vw - 2000px) / (2000 - 375)) + 150px);
+    margin-bottom: calc((150 - 50) * ((100vw - 2000px) / (2000 - 375)) + 150px);
+}
+.news_title{
+    margin-bottom: 50px;
+    font-size: calc((30 - 21) * ((100vw - 2000px) / (2000 - 375)) + 30px);
+    color: #222;
+    font-weight: bold;
+}
