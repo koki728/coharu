@@ -11,7 +11,7 @@
     <section class="mainsection">
         <div class="main_container top_news">
             <div class="section_title">
-                <p>NEWS test</p>
+                <p>NEWS test test test</p>
             </div>
             <div class="news_flex">
 
