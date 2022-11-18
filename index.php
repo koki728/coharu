@@ -11,7 +11,7 @@
     <section class="mainsection">
         <div class="main_container top_news">
             <div class="section_title">
-                <p>NEWS</p>
+                <p>NEWS test</p>
             </div>
             <div class="news_flex">
 
@@ -32,7 +32,7 @@
 
                 <?php wp_reset_query();
                 endif; ?>
-                
+
             </div>
             <div class="top-news__btn-block sp-none">
                 <a class="top-news__btn btn btn--line" href="<?php echo esc_url(home_url('news')) ?>">VIEW ALL</a>
